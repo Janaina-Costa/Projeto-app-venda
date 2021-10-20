@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Vendas</title>
+</head>
+<body>
+    <div class="produto flex-container">
+       <h2>Localize o produto</h2>
+       <select name="produto" id="select" class="produtos"  onchange="showCodPrice()">
+            <option value="789562897" class="item" >Hot-Dog Salsicha</option>
+            <option value="789564578 " class="item">Hot-Dog Linguiça</option>
+            <option value="789564447" class="item">Hamburger</option>
+            <option value="789564362" class="item">X-Burguer</option>
+            <option value="789564811" class="item">Egg-Burguer</option>
+            <option value="789564465" class="item">Refrigerante</option>
+            <option value="789564221" class="item">Suco</option>
+            <option value="789564336" class="item">Agua Mineral c/ gás</option>
+            <option value="789564444" class="item">Agua Mineral s/ gás</option>
+       </select>
+
+       <div>
+        <h3>Código</h3>
+        <div id="codigo"></div>
+       </div>
+       
+       <div>
+        <label for="">
+            <h3>Quantidade</h3>
+            <input type="number" name="quant" id="quant" min="0"></label>
+       </div>
+
+       <div>
+           <label for=""><h3>Cupom</h3>
+            <input type="text" name="" id="cupom" value="0000"></label></div>
+       
+        <div>
+            <h3>Valor Unitário (R$)</h3>
+            <div id="valor-unitario"> </div>
+            </div>
+
+        <button id="add-prod">Adicionar Produto</button>
+    </div>
+
+    <!--Final Venda-->
+    <div class="final-venda flex-container">
+        <div id="vendedor"><p>Vendedor: <span>Fulaninho de Tal</span></p></div>
+    <div class="total-produto">
+        <div class="descricao">
+            <div class="itemd" >Qunt</div>
+            <div class="itemd" >Produto</div>
+            <div class="itemd" >Valor(R$)</div>
+        </div>
+
+        <div class="resultado">
+            <div class="result" id="n-prod"></div>
+            <div class="result" id="desc-prod"></div>
+            <div class="result" id="preco-prod"></div>
+
+        </div>
+        <button id="finalizar">Finalizar Compra</button><br>
+        <button id="cancelar">Cancelar Compra</button>
+    </div>
+    
+</div>
+<script src="script.js"></script>
+</body>
+</html>

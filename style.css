@@ -1,0 +1,128 @@
+.flex-container{
+    display: flex;
+    width: 590px;
+    height: 530px;
+    border: 2px solid rgb(118, 114, 114);
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px grey;
+    margin: 0;
+}
+
+.produto{
+    flex-direction: column;
+    
+}
+#codigo{
+    border: 1px solid rgb(82, 78, 78);
+    border-radius: 2px;
+    line-height: 110%;
+}
+#select{
+    font-size: 18px;
+}
+
+#select,
+#produto,
+#codigo, 
+#valor-unitario{
+    width:99%;
+    height: 30px;
+    font-size: 16px;
+}
+#quant, #cupom {
+    width: 98%;
+    height: 30px;
+}
+
+#add-prod{
+    padding: 20px;
+    line-height: 40%;
+    height: 30px;
+    text-align: center;
+    border-radius: 7px;
+
+}
+.final-venda{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 6px;
+    max-height: 300px;
+    border: none;
+    box-shadow: none;
+    
+    
+    
+}
+
+#vendedor{
+    margin-bottom: 5px;
+    height: 50px;
+    font-weight: 700;
+
+}
+.descricao, .resultado{
+    display: flex;
+    flex-direction: row;
+    border: 3px solid rgba(128, 128, 128, 0.639);
+    border-style: inset;
+    padding: 13px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px grey;
+    
+
+}
+
+.descricao{
+    margin-bottom: 10px;
+    width: 575px;
+    padding-left: 0px;
+    justify-content: space-between;
+    
+    
+}
+
+.resultado{
+    margin-bottom: 12px;
+    width: 565px;
+    justify-content: space-between;
+}
+
+.itemd{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 5px;
+    padding: 1px;
+    width: 100px;
+    text-align: center;
+    
+}
+.result{
+    font-size: 18px;
+    margin: 5px;
+    padding: 5px;
+    width: 200px;
+    text-align: center;
+}
+#finalizar{
+    padding: 20px;
+    line-height: 50%;
+    height: 30px;
+    text-align: center;
+    width: 100%;
+    margin-top: 4px;
+    border-radius: 7px;
+}
+
+#cancelar{
+    padding: 20px;
+    line-height: 50%;
+    height: 30px;
+    text-align: center;
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 50px;
+    border-radius: 7px;
+}
